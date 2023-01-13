@@ -39,7 +39,7 @@
 
 {% for i in users %}
 
-<a href=" {% url 'userdetail' %} "> {{i.username}} </a>
+<a href=" {% url 'userdetail' i.id %} "> {{i.username}} </a>
 <br />
 <br />
 {% endfor %} 
