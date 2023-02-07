@@ -42,7 +42,6 @@ def user_login(request):
                     messages.success(request,'logged in sucessfully')
                     return HttpResponseRedirect('/profile/')        #must be start and end with slesh
             else:
-                print('5')
                 fm = AuthenticationForm()
                 messages.success(request,'Password or Username incorrect')
                 return render(request,'login.html',{'form':fm})
